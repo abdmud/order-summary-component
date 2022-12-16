@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600&family=Open+Sans:ital,wght@0,300;1,300;1,400&family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+body {
+    background-color: #e0e8ff;
+    background-image: url('./images/pattern-background-desktop.svg');
+    background-repeat: no-repeat;
+    font-family: 'Red Hat Display', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 8%;
+}
+
+.card {
+    border: solid #f5f7ff 1px;
+    width: 400px;
+    border-radius: 6px;
+    background-color: white;
+}
+
+.card-plan {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.card-image img{
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    width: 400px;
+}
+
+.card-text {
+    text-align: center;
+}
+
+.card-text h2,
+.plan-name {
+    color: #1f2f56;
+}
+
+.card-text p,
+.plan-price,
+.cancel-btn p {
+    color: #7280a7;
+}
+
+.change-plan p {
+    text-decoration: underline;
+    color: #3829e0;
+}
+
+.buttons {
+    margin-top: 2%;
+    margin-bottom: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.proceed-btn {
+    background-color: #3829e0;
+    color: white;
+    width: 300px;
+    border: none;
+    border-radius: 10px;
+}
+
+.cancel-btn {
+    background-color: white;
+    border: none;
+    margin-top: 3%;
+}
