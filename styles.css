@@ -20,7 +20,11 @@ body {
 
 .card-plan {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 2fr 1fr;
+    background-color: #f5f7ff;
+    width: 340px;
+    margin-left: 7%;
+    border-radius: 10px;
 }
 
 .card-image img{
@@ -30,12 +34,36 @@ body {
 }
 
 .card-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     text-align: center;
+}
+
+.card-text p {
+    width: 280px;
+    margin-left: 15%;
+    margin-top: -1%;
 }
 
 .card-text h2,
 .plan-name {
     color: #1f2f56;
+}
+
+.plan-name {
+    font-weight: bold;
+}
+
+.plan-icon {
+    margin-top: 20%;
+    padding-left: 15%;
+}
+
+.plan-price{
+    grid-row: 2;
+    grid-column: 2;
+    margin-top: -25%;
 }
 
 .card-text p,
@@ -47,6 +75,7 @@ body {
 .change-plan p {
     text-decoration: underline;
     color: #3829e0;
+    margin-top: 30%;
 }
 
 .buttons {
@@ -60,13 +89,46 @@ body {
 .proceed-btn {
     background-color: #3829e0;
     color: white;
-    width: 300px;
+    font-size: 14px;
+    font-weight: bold;
+    width: 340px;
     border: none;
     border-radius: 10px;
+    margin-top: 3%;
+    box-shadow: 0px 20px 5px #f5f7ff;
 }
 
 .cancel-btn {
     background-color: white;
     border: none;
-    margin-top: 3%;
+    margin-top: 5%;
+    font-weight: bold;
 }
+
+/** MOBILE **/
+@media only screen and (max-width: 375px) {
+    body {
+        width: 300px;
+    }
+    .card {
+      width: 330px;
+      font-size: 14px;
+      border-radius: 15px;
+      margin-left: 10%;
+    }
+    .card-image img{
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+        width: 330px;
+    }
+    .card-text p {
+        margin-left: 5%;
+    }
+    .card-plan {
+        width: 280px;
+        margin-right: -5%;
+    }
+    .proceed-btn {
+        width: 280px;
+    }
+  }
